@@ -10,5 +10,5 @@ export default function Suggestion(props) {
             </div>
             <button>Seguir</button>
         </div>
-    )
-};
+    );
+}

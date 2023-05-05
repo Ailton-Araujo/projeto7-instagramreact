@@ -8,45 +8,45 @@ export default function Post(props) {
   let [saveStatus, setStatus] = useState("unSaved");
 
   let [likeNumbers, setLikes] = useState(props.dataPost.postTotalLikes);
-  let [likeStatus, setLikeStatus] = useState("unLiked")
-  let [likeIcon, setLikeIcon] = useState(<ion-icon name="heart-outline"></ion-icon>)
+  let [likeStatus, setLikeStatus] = useState("unLiked");
+  let [likeIcon, setLikeIcon] = useState(<ion-icon name="heart-outline"></ion-icon>);
 
-  let [statusAnimation, setAnimation] = useState("preLike hidden")
+  let [statusAnimation, setAnimation] = useState("preLike hidden");
 
   function savePost() {
     if (saveStatus === "unSaved") {
-      setStatus("saved")
-      setIcon(<ion-icon name="bookmark"></ion-icon>)
+      setStatus("saved");
+      setIcon(<ion-icon name="bookmark"></ion-icon>);
     } else {
-      setStatus("unSaved")
-      setIcon(<ion-icon name="bookmark-outline"></ion-icon>)
+      setStatus("unSaved");
+      setIcon(<ion-icon name="bookmark-outline"></ion-icon>);
     }
   }
 
   function likePost() {
     if (likeStatus === "unLiked") {
       setLikes(likeNumbers + 1);
-      setLikeStatus("liked")
-      setLikeIcon(<ion-icon name="heart"></ion-icon>)
+      setLikeStatus("liked");
+      setLikeIcon(<ion-icon name="heart"></ion-icon>);
     } else {
       setLikes(likeNumbers - 1);
-      setLikeStatus("unLiked")
-      setLikeIcon(<ion-icon name="heart-outline"></ion-icon>)
+      setLikeStatus("unLiked");
+      setLikeIcon(<ion-icon name="heart-outline"></ion-icon>);
     }
   }
 
   function likePostImage() {
     if (likeStatus === "unLiked") {
       setLikes(likeNumbers + 1);
-      setLikeStatus("liked")
-      setLikeIcon(<ion-icon name="heart"></ion-icon>)
-      setAnimation("preLike")
+      setLikeStatus("liked");
+      setLikeIcon(<ion-icon name="heart"></ion-icon>);
+      setAnimation("preLike");
       setTimeout(()=>{
         setAnimation("posLike")
-      },50)
+      },50);
       setTimeout(()=>{
         setAnimation("preLike hidden")
-      },550)
+      },550);
     }
   }
 
@@ -97,6 +97,6 @@ export default function Post(props) {
         </button>
       </div>
     </div>
-  )
-};
+  );
+}
 

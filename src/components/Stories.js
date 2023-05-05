@@ -11,5 +11,5 @@ export default function Stories() {
                 return <Story dataStorie = {dataStorie}/>
             })}
         </div>
-    )
-};
+    );
+}

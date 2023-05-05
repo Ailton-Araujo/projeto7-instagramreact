@@ -8,5 +8,5 @@ export default function Posts() {
                 return <Post dataPost = {dataPost}/>
             })}
         </div> 
-    )
-};
+    );
+}

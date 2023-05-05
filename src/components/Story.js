@@ -9,5 +9,5 @@ export default function Story(props) {
             </div>
             <p>{props.dataStorie.title}</p>
         </div>
-    )
-};
+    );
+}

@@ -12,5 +12,5 @@ export default function Suggestions() {
                 return <Suggestion dataSuggestion = {dataSuggestion} />
             })}
         </div>
-    )
-};
+    );
+}

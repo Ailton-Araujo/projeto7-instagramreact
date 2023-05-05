@@ -14,6 +14,7 @@ export default function User() {
       setUser(name);
     }
   };
+
   function changeUserImage(){
     const image = prompt("Digite o link da sua nova Imagem");
     if(!image){
@@ -36,7 +37,7 @@ export default function User() {
         </div>
       </div>
     </div>
-  )
-};
+  );
+}
 
 
