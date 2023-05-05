@@ -204,26 +204,29 @@ a {
   font-weight: 500;
   line-height: 16px;
 }
-.postagem{
+
+.postagem {
   position: relative;
 }
+
 .preLike,
-.posLike{
+.posLike {
   color: white;
   position: absolute;
   left: calc(50% - 75px);
   top: calc(50% - 75px);
 }
 
-.preLike ion-icon{
+.preLike ion-icon {
   width: 150px;
   height: 150px;
   scale: 0.2;
 }
-.posLike ion-icon{
+
+.posLike ion-icon {
   width: 150px;
   height: 150px;
-  scale: 1,0;
+  scale: 1, 0;
   transition: all 0.3s;
 }
 
@@ -277,7 +280,7 @@ a {
 button.unSaved,
 button.saved,
 button.unLiked,
-button.liked{
+button.liked {
   display: inline;
   align-items: center;
   justify-content: center;
@@ -287,7 +290,7 @@ button.liked{
   border: none;
 }
 
-.liked ion-icon{
+.liked ion-icon {
   color: red;
 }
 
@@ -419,6 +422,12 @@ button.liked{
   margin-right: 10px;
 }
 
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .info a {
   font-weight: 500;
   font-size: 14px;
@@ -431,6 +440,11 @@ button.liked{
   font-size: 14px;
   line-height: 16px;
   color: #8e8e8e;
+}
+
+.info button {
+  background: none;
+  border: none;
 }
 
 .recomendados {
@@ -518,7 +532,7 @@ button.liked{
   height: 14px;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
