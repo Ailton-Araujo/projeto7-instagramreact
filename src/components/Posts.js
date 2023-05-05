@@ -6,7 +6,7 @@ export default function Posts() {
         <div>
             {dataPosts.map(dataPost =>{
                 return <Post dataPost = {dataPost}/>
-            })}
+            })};
         </div> 
     );
 }

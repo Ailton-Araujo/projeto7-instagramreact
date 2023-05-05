@@ -153,4 +153,4 @@ export const dataSuggestions = [
         link: "https://www.instagram.com/smallcutecats/",
         title: "smallcutecats"
     },
-]
+];

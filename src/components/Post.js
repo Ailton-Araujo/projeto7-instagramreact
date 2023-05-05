@@ -42,10 +42,10 @@ export default function Post(props) {
       setLikeIcon(<ion-icon name="heart"></ion-icon>);
       setAnimation("preLike");
       setTimeout(()=>{
-        setAnimation("posLike")
+        setAnimation("posLike");
       },50);
       setTimeout(()=>{
-        setAnimation("preLike hidden")
+        setAnimation("preLike hidden");
       },550);
     }
   }

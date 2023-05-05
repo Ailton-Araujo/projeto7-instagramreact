@@ -11,5 +11,5 @@ export default function PostType(props) {
                 Seu navegador não suporta vídeos.
             </video>
         )
-    };
+    }
 }

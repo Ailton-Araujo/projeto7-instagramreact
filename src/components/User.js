@@ -13,8 +13,7 @@ export default function User() {
     }else{
       setUser(name);
     }
-  };
-
+  }
   function changeUserImage(){
     const image = prompt("Digite o link da sua nova Imagem");
     if(!image){
@@ -22,8 +21,7 @@ export default function User() {
     }else{
       setImage(image);
     }
-  };
-  
+  }
   return (
     <div className="usuario">
       <div className="perfil-usuario">
