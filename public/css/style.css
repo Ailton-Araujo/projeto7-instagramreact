@@ -226,7 +226,7 @@ a {
 .posLike ion-icon {
   width: 150px;
   height: 150px;
-  scale: 1, 0;
+  scale: 1.0;
   transition: all 0.3s;
 }
 
