@@ -1,6 +1,6 @@
-import NavBar from "./NavBar"
-import Body from "./Body"
-import BottomMenuMobile from "./BottomMenuMobile"
+import NavBar from "./NavBar";
+import Body from "./Body";
+import BottomMenuMobile from "./BottomMenuMobile";
 
 export default function App() {
     return (
@@ -9,5 +9,5 @@ export default function App() {
             <Body />
             <BottomMenuMobile />
         </div>
-    )
-}
+    );
+};

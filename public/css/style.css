@@ -2,12 +2,10 @@
   box-sizing: border-box;
 }
 
-
 .root {
   height: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #fafafa;
-  ;
 }
 
 ion-icon {
@@ -206,6 +204,28 @@ a {
   font-weight: 500;
   line-height: 16px;
 }
+.postagem{
+  position: relative;
+}
+.preLike,
+.posLike{
+  color: white;
+  position: absolute;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+}
+
+.preLike ion-icon{
+  width: 150px;
+  height: 150px;
+  scale: 0.2;
+}
+.posLike ion-icon{
+  width: 150px;
+  height: 150px;
+  scale: 1,0;
+  transition: all 0.3s;
+}
 
 .postagem img {
   width: 100%;
@@ -252,6 +272,23 @@ a {
   height: 20px;
   border-radius: 10px;
   margin-right: 5px;
+}
+
+button.unSaved,
+button.saved,
+button.unLiked,
+button.liked{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+}
+
+.liked ion-icon{
+  color: red;
 }
 
 .comentarios {
@@ -340,17 +377,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #b2dffc;
+  transition-property: color;
+  transition-duration: 300ms;
 }
 
 .publicar ion-icon {
   width: 15px;
   height: 15px;
-}
-
-.publicar {
-  color: #b2dffc;
-  transition-property: color;
-  transition-duration: 300ms;
 }
 
 .publicar:hover,
@@ -451,20 +485,6 @@ a {
   margin-right: 10px;
 }
 
-.info a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #262626;
-}
-
-.info p {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8e8e8e;
-}
-
 .recomendacoes button {
   font-weight: 500;
   font-size: 12px;
@@ -496,6 +516,10 @@ a {
 
 .copyrigth {
   height: 14px;
+}
+
+.hidden{
+  display: none;
 }
 
 @media (max-width: 935px) {

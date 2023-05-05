@@ -1,5 +1,5 @@
-import {dataStories} from "./Data"
-import Story from "./Story"
+import {dataStories} from "./Data";
+import Story from "./Story";
 
 export default function Stories() {
     return (
@@ -7,9 +7,9 @@ export default function Stories() {
             <button className="b-scroll">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </button>
-            {dataStories.map(i => {
-                return <Story props = {i}/>
+            {dataStories.map(dataStorie => {
+                return <Story dataStorie = {dataStorie}/>
             })}
         </div>
     )
-}
+};

@@ -1,5 +1,5 @@
-import Suggestion from "./Suggestion"
-import { dataSuggestions } from "./Data"
+import Suggestion from "./Suggestion";
+import { dataSuggestions } from "./Data";
 
 export default function Suggestions() {
     return (
@@ -8,9 +8,9 @@ export default function Suggestions() {
                 <p>Sugestões para você</p>
                 <button>Ver tudo</button>
             </div>
-            {dataSuggestions.map(i => {
-                return <Suggestion props = {i} />
+            {dataSuggestions.map(dataSuggestion => {
+                return <Suggestion dataSuggestion = {dataSuggestion} />
             })}
         </div>
     )
-}
+};

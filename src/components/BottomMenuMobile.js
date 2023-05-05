@@ -8,4 +8,4 @@ export default function BottomMenuMobile() {
             <ion-icon name="person-outline"></ion-icon>
         </div>
     )
-}
+};
