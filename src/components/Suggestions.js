@@ -9,7 +9,7 @@ export default function Suggestions() {
                 <button>Ver tudo</button>
             </div>
             {dataSuggestions.map(dataSuggestion => {
-                return <Suggestion dataSuggestion = {dataSuggestion} />
+                return <Suggestion key = {dataSuggestion.title} dataSuggestion = {dataSuggestion} />
             })}
         </div>
     );

@@ -8,7 +8,7 @@ export default function Stories() {
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </button>
             {dataStories.map(dataStorie => {
-                return <Story dataStorie = {dataStorie}/>
+                return <Story key = {dataStorie.title} dataStorie = {dataStorie}/>
             })}
         </div>
     );

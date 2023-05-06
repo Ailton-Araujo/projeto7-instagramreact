@@ -4,8 +4,8 @@ import Post from "./Post";
 export default function Posts() {
     return(
         <div>
-            {dataPosts.map(dataPost =>{
-                return <Post dataPost = {dataPost}/>
+            {dataPosts.map((dataPost, index) =>{
+                return <Post key = {index} dataPost = {dataPost}/>
             })};
         </div> 
     );

@@ -70,7 +70,7 @@ export default function Post(props) {
         <div className="texto">
           {props.dataPost.comments.map(i => {
             return (
-              <p><strong>{i.userName}</strong> {i.text}</p>
+              <p key = {props.dataPost.comments.userName}><strong>{i.userName}</strong> {i.text}</p>
             )
           })}
         </div>
